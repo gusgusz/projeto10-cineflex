@@ -147,6 +147,20 @@ function TelaAssentos(props) {
     <Container>
       <h1>Selecione o(s) assento(s)</h1>
       <Assentos>{assentos}</Assentos>
+      <Info>
+       <div>
+        <div className='disponivel'></div>
+        disponivel
+       </div>
+       <div>
+        <div className='selecionado'></div>
+        selecionado
+       </div>
+       <div>
+        <div className='indisponivel'></div>
+        indisponivel
+       </div>
+      </Info>
       <FormularioCompra onSubmit={confirmarCompra}>{formularioCompra}</FormularioCompra>
       <Footer>{footer}</Footer>
     </Container>
@@ -230,5 +244,40 @@ const Footer = styled.div`
     font-size: 20px;
   }
 `;
+const Info = styled.div`
+display: flex;
+margin: 12px;
+justify-content: space-around;
+
+div{
+
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-between;
+  margin: 0 15px;
+  div{
+    width: 26px;
+  height: 26px;
+  border: 1px solid #808f9d;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  margin: 20px 15px;
+  
+
+}
+
+.disponivel{
+    background-color: #C3CFD9;
+  }
+  .indisponivel{
+    background-color: #FBE192;
+  }
+  .selecionado{
+    background-color: #8DD7CF;
+  }
+  }
+`
 
 export default TelaAssentos;
