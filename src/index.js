@@ -1,8 +1,10 @@
-import React from 'react';
-import App from './App';
+
+import ReactDOM from "react-dom";
+import "./assets/css/reset.css";
+import "./assets/css/style.css";
 
 
-const root = createRoot(document.getElementById('root'));
-root.render(<App />);
 
+import App from "./componentes/App.js";
 
+ReactDOM.render(<App />, document.querySelector(".root"));
