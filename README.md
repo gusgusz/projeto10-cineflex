@@ -1,3 +1,34 @@
+# Projeto Cineflex
+O Cineflex é uma aplicação web que simula um sistema de reserva de assentos em um cinema, permitindo que os usuários selecionem filmes, horários e assentos para suas sessões de cinema.
+
+
+
+## Tecnologias Utilizadas
+
+- React.js
+- HTML5
+- CSS3
+- JavaScript
+
+## Funcionalidades
+
+O projeto Cineflex possui as seguintes funcionalidades:
+
+- Visualizar a lista de filmes disponíveis.
+- Selecionar um filme para ver os horários de exibição disponíveis.
+- Selecionar um horário para ver os assentos disponíveis para aquela sessão.
+- Selecionar e deselecionar assentos.
+- Digitar nome e CPF para realizar a reserva.
+- Visualizar o resumo da reserva com o nome do filme, horário, assentos selecionados e informações do comprador.
+- Confirmar a reserva.
+
+## Instalação
+
+
+
+5. Acesse a aplicação em seu navegador no endereço `http://localhost:3000`.
+
+
 # Getting Started with Create React App
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
